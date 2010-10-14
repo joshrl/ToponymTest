@@ -130,7 +130,7 @@ class ToponymLookup:
     
     except urllib2.HTTPError, httpErr:
       if httpErr.code != 404:
-        return (0,str(e))
+        return (0,str(httpErr))
     except Exception, e:
       return (0,str(e))
     return (1,name1,name2)
