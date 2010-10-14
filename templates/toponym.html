@@ -1,0 +1,7 @@
+$def with (names,lat,lng)
+
+<table>
+  <tr><th>Service</th><th>Name 1</th<th>Name 2</th><tr>
+$for name in names:
+  <tr><td>$name['service']</td><td>$name['name1']</td><td>$name['name2']</td></tr>
+</table>
